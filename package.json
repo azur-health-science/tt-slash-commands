@@ -1,0 +1,44 @@
+{
+  "name": "tt-slash-commands",
+  "version": "1.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azur-health-science/tt-slash-commands"
+  },
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "check-types": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=19",
+    "@tiptap/pm": ">=3",
+    "@tiptap/react": ">=3",
+    "@tiptap/suggestion": ">=3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2",
+    "@tiptap/pm": "^3.11.1",
+    "@tiptap/react": "^3.11.1",
+    "@tiptap/suggestion": "^3.11.1"
+  },
+  "dependencies": {
+    "cmdk": "^1.1.1",
+    "tippy.js": "^6.3.7",
+    "tunnel-rat": "^0.1.2"
+  }
+}
